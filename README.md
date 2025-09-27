@@ -1,5 +1,15 @@
 # ecf-backend-api-vgames
 
+- Titre professionnel : Concepteur(trice) Développeur(euse) d'Application
+- J.O 2023
+- Durée de l'épreuve: 4 heures
+
+
+**Compétences évaluées :**
+- Installer et configurer son environnement de travail en fonction du projet
+- Développer des composants métier
+
+
 ## Contexte
 
 La Gizmondo est une console de jeux vidéo portable faisant également office d'appareil photo, GPS, lecteur audio/vidéo... Elle fut fabriquée de 2005 à 2008 par Tiger Telematics.
@@ -21,7 +31,8 @@ La Gizmondo est une console de jeux vidéo portable faisant également office d'
 
 ## Préparation.
 
-1. Faites un FORK du dépôt du votre compte Github.
+1. Faites un FORK de ce dépôt du votre compte Github.
+    - `git clone https://github.com/ARFP/ecf-backend-api-vgames.git` 
 
 2. Cloner le dépôt en local et positionner vous dans le répertoire `symfony` avec votre terminal
 
