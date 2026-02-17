@@ -25,6 +25,10 @@ class Gizmondo
     #[ORM\Column(length: 255)]
     private ?string $dev = null;
 
+    #[ORM\ManyToOne(inversedBy: 'game')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Publisher $publisher = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -62,6 +66,18 @@ class Gizmondo
     public function setDev(string $dev): static
     {
         $this->dev = $dev;
+
+        return $this;
+    }
+
+    public function getPublisher(): ?Publisher
+    {
+        return $this->publisher;
+    }
+
+    public function setPublisher(?Publisher $publisher): static
+    {
+        $this->publisher = $publisher;
 
         return $this;
     }

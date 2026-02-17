@@ -26,6 +26,22 @@ et ajouter en dessous la ligne suivante : `DATABASE_URL="mysql://userxx:userxx@d
 
 - pour les entité installer : composer require symfony/maker-bundle --dev
 
+- faire les entity pour Gizmodo et Publisher
 
+- attribut gizmodo: game, year, dev
+
+- attribut publisher: name
+
+- php bin/console make:migration, -php bin/console doctrine:migrations:migrate
+
+- Dans l'api, l'opération `POST` pour ajouter quelques jeux du jeu d'essai. ajouter les "publisher" avant.
+
+- fais une relation entre gizmodo et publisher Manytoone
+
+- modification de la migration pour mettre default 0
+
+- saisir dans l'api en post quelques données de publisher et ensuite gizmodo avec le chemin pour le publisher /publisher/1
+
+- dernier commit pout test et lien github: https://github.com/darkb1967/ecf-backend-api-vgames-ob.git
 
 
