@@ -6,14 +6,14 @@ services:
     image: mariadb:11.8.5
     container_name: symfony8-eval-db
     restart: unless-stopped
-    ports: ["3307:3306"]
+    ports: ["3308:3306"]
     volumes:
       - db_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: db_symfony
-      MYSQL_USER: user_symfony 
-      MYSQL_PASSWORD: azer
+      MYSQL_DATABASE: db_eval
+      MYSQL_USER: eval
+      MYSQL_PASSWORD: eval2503
   web: 
     # image: php:8.4-apache
     build: 
@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile
     container_name: symfony8-eval-web
     restart: unless-stopped
-    ports: ["8080:80"]
+    ports: ["9005:80"]
     depends_on: ['db']
     links: ['db']
     volumes:
